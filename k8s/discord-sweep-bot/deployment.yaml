@@ -16,6 +16,8 @@ spec:
       labels:
         app: discord-sweep-bot
     spec:
+      imagePullSecrets:
+        - name: ghcr-secret
       terminationGracePeriodSeconds: 30
       securityContext:
         runAsNonRoot: true
