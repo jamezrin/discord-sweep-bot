@@ -21,3 +21,4 @@
 - **Deployment**: K8s manifests with ArgoCD support, ExternalSecret synced from Bitwarden
 - **K8s namespace**: `discord-sweep-bot`
 - **Security hardening**: Non-root user, read-only root fs, dropped capabilities
+- **Commits**: Conventional Commits format (feat:, fix:, docs:, refactor:, etc.)
