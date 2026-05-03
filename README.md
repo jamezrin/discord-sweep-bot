@@ -15,7 +15,7 @@ Always free and available, open-source at [github.com/jamezrin/discord-sweep-bot
 
 ## Adding the Bot to Your Server
 
-[Click here to add the bot to your server](https://discord.com/oauth2/authorize?client_id=1500540449897713696&permissions=8&integration_type=0&scope=bot+applications.commands)
+[Click here to add the bot to your server](https://discord.com/oauth2/authorize?client_id=1500547924021739720&permissions=8&integration_type=0&scope=bot+applications.commands)
 
 ## Commands
 
