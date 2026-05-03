@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discord Sweep Bot</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #0f1117;
+      --surface: #1a1d27;
+      --border: #2e3148;
+      --text: #e2e4f0;
+      --muted: #8b8fa8;
+      --accent: #5865f2;
+      --accent-hover: #4752c4;
+      --danger: #ed4245;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      max-width: 560px;
+      width: 100%;
+      text-align: center;
+    }
+    .icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .tagline {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.5;
+    }
+    .features {
+      list-style: none;
+      text-align: left;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.6rem;
+    }
+    .features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .features li::before {
+      content: "→";
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .warning {
+      background: rgba(237, 66, 69, 0.1);
+      border: 1px solid rgba(237, 66, 69, 0.3);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      font-size: 0.85rem;
+      color: var(--danger);
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.15s;
+    }
+    .btn-primary {
+      background: var(--accent);
+      color: #fff;
+      width: 100%;
+      margin-bottom: 0.75rem;
+    }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-ghost {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      width: 100%;
+    }
+    .btn-ghost:hover { border-color: var(--text); color: var(--text); }
+    .links {
+      margin-top: 2rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    .links a {
+      font-size: 0.8rem;
+      color: var(--muted);
+      text-decoration: none;
+    }
+    .links a:hover { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="icon" src="https://raw.githubusercontent.com/jamezrin/discord-sweep-bot/main/assets/icon.png" alt="Discord Sweep Bot icon" onerror="this.style.display='none'" />
+    <h1>Discord Sweep Bot</h1>
+    <p class="tagline">Bulk channel deletion for server administrators.<br>Delete entire categories or multiple channels instantly.</p>
+
+    <ul class="features">
+      <li>Delete all channels within a category with one command</li>
+      <li>Delete any set of specific channels by mentioning them</li>
+      <li>Administrator-only — hard permission check, no exceptions</li>
+      <li>Stateless — no database, no stored data</li>
+      <li>Always free and open-source (GPL-3.0)</li>
+    </ul>
+
+    <div class="warning">
+      ⚠ Channel deletion is <strong>irreversible</strong>. Only server administrators can use this bot.
+    </div>
+
+    <a class="btn btn-primary" href="https://discord.com/oauth2/authorize?client_id=1500540449897713696&permissions=8&integration_type=0&scope=bot+applications.commands">
+      Add to Server
+    </a>
+    <a class="btn btn-ghost" href="https://github.com/jamezrin/discord-sweep-bot">
+      View on GitHub
+    </a>
+
+    <div class="links">
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+    </div>
+  </div>
+</body>
+</html>
