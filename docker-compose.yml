@@ -1,0 +1,9 @@
+services:
+  bot:
+    build: .
+    container_name: discord-sweep-bot
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - LOG_LEVEL=${LOG_LEVEL:-info}
+      - SWEEP_DELAY_MS=${SWEEP_DELAY_MS:-0}
+    restart: unless-stopped

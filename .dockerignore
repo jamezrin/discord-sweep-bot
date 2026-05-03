@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.log
+.env
+.DS_Store
+.git/
+.github/
+.gitignore
+README.md
+AGENTS.md
+docker-compose.yml
+k8s/

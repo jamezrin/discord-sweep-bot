@@ -1,0 +1,22 @@
+{
+  "name": "discord-sweep-bot",
+  "version": "1.0.0",
+  "description": "Stateless Discord bot for bulk channel deletion",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.26.3",
+    "dotenv": "^16.6.1",
+    "winston": "^3.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}

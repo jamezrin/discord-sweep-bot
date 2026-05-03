@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: discord-sweep-bot
+  labels:
+    name: discord-sweep-bot
+    app: discord-sweep-bot
